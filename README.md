@@ -1,4 +1,7 @@
 # PERSONAL PORTFOLIO WEBAPP 
+
+![Client App Gif](screenshots/client-app.gif)
+
 Questo progetto è il risultato finale della specializzazione in PHP e Laravel. Si tratta di un portfolio personale full stack sviluppato per mettere in pratica e consolidare le competenze acquisite durante il corso, combinando un backend robusto e funzionale con un frontend creativo e interattivo.
 
 --- 
@@ -13,6 +16,7 @@ Questo progetto è il risultato finale della specializzazione in PHP e Laravel. 
 - [Installazione](#installazione)
 - [Configurazione](#configurazione)
 - [Uso](#uso)
+- [Screenshots](#screenshots)
 - [Struttura del progetto](#struttura-del-progetto)
 - [Contributi](#contributi)
 
@@ -116,6 +120,36 @@ Il progetto comprende un app back-office per la gestione dei contenuti. E una cl
 - Usa l’interfaccia frontend per visualizzare il portfolio dinamicamente, navigando tra le sezioni e i progetti
 
 - L’autenticazione protegge le aree di gestione contenuti
+
+## SCREENSHOTS
+
+### CLIENT
+- HOME PAGE
+
+![Client Home-page](screenshots/client-homePage.png)
+
+- FINDER
+
+![Client Finder](screenshots/client-projectsPage2.png)
+
+- DETAIL PAGE
+
+![Client Detail-page](screenshots/client-detailPage2.png)
+
+
+### BACK-OFFICE
+- DASHBOARD
+
+![Backoffice Dashboard](screenshots/backoffice-homePage.png)
+
+- EDIT PAGE 
+
+![Backoffice Edit-page](screenshots/backoffice-editPage.png)
+
+- MEDIA MODAL
+
+![Backoffice Media Modal](screenshots/backoffice-mediaModal.png)
+
 
 ## STRUTTURA DEL PROGETTO
 
