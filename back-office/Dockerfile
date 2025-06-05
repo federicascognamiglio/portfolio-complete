@@ -27,11 +27,8 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www/html
 RUN composer install --no-dev --optimize-autoloader
 
-# 🔑 CREA .env con tutte le variabili fornite da Render
+# CREA .env con tutte le variabili fornite da Render
 RUN printenv | grep -v "no_proxy" > .env
-
-# Genera chiave Laravel
-RUN php artisan key:generate
 
 # Cache delle configurazioni
 RUN php artisan config:cache
