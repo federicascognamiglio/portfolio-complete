@@ -1,0 +1,23 @@
+/* UTILITIES */
+:root {
+    --header-height: 50px;
+    --footer-height: 80px;
+    --side-menu-width: 200px;
+
+    --header-background-color: rgba(0, 0, 0, 0.5);
+    --footer-background-color: rgba(59, 59, 59, 0.5);
+    --hover-link-label-background-color: #333;
+
+    --main-blue: #0059D1;
+    --main-grey: rgba(162, 162, 162, 0.5);
+    --active-link-color: rgba(188, 191, 201, 0.5);
+    --dropdown-background-color: #23272f;
+    --side-menu-background-color: #232934;
+    --active-category-color: #3D424D;
+    --project-page-background-color: #1E1F21;
+    --main-border-style: 1px solid rgba(162, 162, 162, 0.5);
+
+    --close-btn-color: #FF4C4A;
+    --hide-btn-color: #FFE100;
+    --expand-btn-color: #00E03A;
+}

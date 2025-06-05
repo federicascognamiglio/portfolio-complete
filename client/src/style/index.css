@@ -1,0 +1,625 @@
+/* GENERAL */
+.home-page,
+.projects-page,
+.side-menu,
+.projects-list,
+.col-list,
+.col-preview,
+.detail-page,
+.reel-page,
+.about-page,
+.cv-page  {
+    height: 100vh;
+}
+
+/* Common Styles */
+.header,
+.footer-link .link-icon,
+.folder,
+.folder .folder-icon,
+.projects-list-header::after,
+.project-card,
+.thumbnail-img,
+.slider-img  {
+    width: 100%;
+}
+
+.footer-link .link-icon,
+.footer .links li:nth-last-child(2)::after,
+.thumbnail-img,
+.slider-img {
+    height: 100%;
+}
+
+.projects-dropdown,
+.footer .links li:nth-last-child(2)::after,
+.hover-link-label,
+.hover-link-label::after,
+.side-menu-header::after,
+.projects-list-header::after,
+.search-bar-icon,
+.layout-grid::after,
+.dots,
+.prev-slide, 
+.next-slide,
+.slider-indicators,
+.img-expand-btn {
+    position: absolute;
+}
+
+.project-preview-subtitle,
+.info-row,
+.detail-page .subtitle,
+.back-btn,
+.forward-btn {
+    font-family: 'SF Pro Thin';
+}
+
+.folder,
+.folder .folder-icon,
+.folder-label,
+.reel .reel-icon,
+.cv .cv-icon {
+    padding: .3rem;
+}
+
+.side-menu-header .close-btn,
+.side-menu-header .hide-btn,
+.side-menu-header .expand-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.footer-link .link-icon,
+.thumbnail-img,
+.slider-img  {
+    object-fit: cover;
+}
+
+.side-menu-header .close-btn,
+.side-menu-header .hide-btn {
+    margin-right: 10px;
+}
+
+/* HEADER */
+.header {
+    background-color: var(--header-background-color);
+    height: var(--header-height);
+    padding: 10px 20px;
+    font-size: .9rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header .logo {
+    height: 25px;
+    padding-right: 20px;
+}
+
+.nav-link {
+    padding: 3px 8px;
+}
+
+.header .nav-icons li {
+    padding-right: 20px;
+}
+
+.bread-crumbs {
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.bread-crumb-link {
+    padding-right: 5px;
+   color: rgba(254, 254, 254, 0.5);;
+}
+
+.bread-crumb-active {
+    color: var(--main-grey);
+}
+
+.active {
+    background-color: var(--active-link-color);
+    border-radius: 5px;
+}
+
+/* DROPDOWN */
+.projects-dropdown {
+    top: 30px;
+    left: -5px;
+    border: var(--main-border-style);
+    background-color: var(--dropdown-background-color);
+    padding: 10px;
+    z-index: 1000;
+    width: 180px;
+}
+
+.dropdown-link {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--footer-background-color);
+    height: var(--footer-height);
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border: var(--main-border-style);
+    border-radius: 20px;
+}
+
+.footer-link {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.footer-link:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.footer-link .link-icon {
+    border-radius: 20%;
+}
+
+.footer .links li:nth-last-child(2)::after {
+    content: '';
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    background-color: var(--main-grey);
+}
+
+.hover-link-label {
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .5rem .8rem;
+    background-color: var(--hover-link-label-background-color);
+    font-size: .8rem;
+}
+
+.hover-link-label::after {
+    content: '';
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--hover-link-label-background-color);
+}
+
+/* Home Page */
+.home-page {
+    background-image: url('/img/main-bg.webp');
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.home-page .logo {
+    width: 400px;
+}
+
+.home-page .subtitle {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: 'SF Pro Regular';
+}
+
+.folders {
+    width: 210px;
+    flex-wrap: wrap;
+}
+
+.folder {
+    margin-bottom: 30px;
+}
+
+.folder-label {
+    font-size: 0.9rem;
+}
+
+.reel .reel-icon {
+    width: 80px;
+}
+
+.cv .cv-icon {
+    width: 60px;
+}
+
+/* Projects Page */
+.side-menu,
+.projects-list {
+    padding-top: 70px;
+}
+
+.side-menu {
+    width: var(--side-menu-width);
+    background-color: var(--side-menu-background-color);
+}
+
+.btn-icon {
+    font-size: .6rem;
+}
+
+.projects-list {
+    background-color: var(--project-page-background-color);
+    width: calc(100% - var(--side-menu-width));
+}
+
+.side-menu-header,
+.projects-list-header {
+    height: 30px;
+    padding-bottom: 20px;
+}
+
+.side-menu-header::after,
+.projects-list-header::after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: rgb(1, 4, 22);
+    box-shadow: 5px 2px 8px #414247;
+}
+
+.side-menu-header::after {
+    width: 200px;
+}
+
+.active-side-bar {
+    background-color: var(--active-category-color);
+    border-radius: 5px;
+}
+
+.side-menu-body {
+    padding: 30px;
+}
+
+.projects-list-body {
+    padding: 0 30px;
+}
+
+.side-menu-header .close-btn {
+    background-color: var(--close-btn-color);
+}
+
+.side-menu-header .hide-btn {
+    background-color: var(--hide-btn-color);
+}
+
+.side-menu-header .expand-btn {
+    background-color: var(--expand-btn-color);
+}
+
+.navigation {
+    padding-left: 30px;
+}
+
+.actions {
+    padding-right: 30px;
+}
+
+.back-btn,
+.forward-btn {
+    font-size: 1.5rem;
+}
+
+.back-btn {
+    padding-right: 10px;
+}
+
+.forward-btn {
+    padding-right: 20px;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.search-bar {
+    background-color: var(--project-page-background-color);
+    border: var(--main-border-style);
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.search-bar-icon {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: .8rem;
+    color: var(--main-grey);
+}
+
+.buttons {
+    margin-right: 50px;
+}
+
+.layout-grid {
+    margin-right: 20px;
+}
+
+.layout-list {
+    margin-right: 40px;
+}
+
+.layout-grid::after {
+    content: '';
+    top: 50%;
+    left: 38px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 20px;
+    background-color: var(--main-grey);
+}
+
+.grid-card .project-name {
+    font-size: .9rem;
+    padding: 3px 8px;
+}
+
+.category-item,
+.type-item {
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+.category-item {
+    color: #7E8A9E;
+    margin: 20px 0 10px;
+}
+
+.grid-icon {
+    padding: 6px 8px 3px 8px;
+    border-radius: 3px;
+}
+
+.type-item {
+    color: #E5EEFF;
+    margin-bottom: 5px;
+}
+
+.project-grid {
+    padding-top: 30px;
+}
+
+.project-card .project-thumbnail {
+    width: 100px;
+    height: 100px;
+    padding: 8px;
+}
+
+.project-card .project-thumbnail-sm {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.col-list {
+    width: 30%;
+    padding-top: 30px;
+    border-right: 1px solid rgb(1, 4, 22);
+}
+
+.col-list .project-name {
+    font-size: 1rem;
+}
+
+.col-preview {
+    width: 70%;
+    padding: 40px 40px 200px 80px;
+    overflow: scroll;
+}
+
+.project-preview-name {
+    font-size: 1.5rem;
+    padding: 20px 0 5px;
+}
+
+.project-preview-subtitle {
+    padding-bottom: 20px;
+}
+
+.project-preview-info {
+    padding: 10px 0 50px;
+}
+
+.info-row {
+    font-size: 1rem;
+}
+
+.divider {
+    margin: 10px 0;
+}
+
+.more-btn {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.dots {
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.highlighted {
+    background-color: var(--main-blue);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+/* Detail Page */
+.detail-page {
+    background-color: var(--project-page-background-color);
+    padding: 80px 0 100px 0;
+    overflow: scroll;
+}
+
+.cover-img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider,
+.img-container {
+    margin: 20px 0;
+    width: 60%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider-img {
+    display: block;
+}
+
+.prev-slide, 
+.next-slide {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.prev-slide {
+    left: 20px;
+}
+
+.next-slide {
+    right: 20px;
+}
+
+.slider-indicators {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 8px;
+}
+
+.indicator {
+    width: 20px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.detail-page .main-title {
+    font-size: 3rem;
+    padding-bottom: 5px;
+}
+
+.detail-page .subtitle {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.detail-page .category-type {
+    background-color: var(--main-blue);
+    padding: .3em 1em;
+}
+
+.details {
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+
+.badge-tag, .badge-tool {
+    padding: .2em .4em;
+    margin: 0 4px;
+    border-radius: 8px;
+}
+
+.badge-tool {
+    background-color: var(--active-link-color);
+}
+
+.detail-page .description {
+    max-width: 70%;
+    padding-top: 20px;
+}
+
+.details .date {
+    margin-right: 20px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.img-expand-btn {
+    font-size: 1.5rem;
+    top: 20px;
+    right: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+/* Reel Page & About Page & CV Page */
+/* TB Defined */
+.reel-page,
+.about-page,
+.cv-page {
+    padding-top: 100px;
+    background-color: var(--project-page-background-color);
+}
+
+.reel-page h1,
+.about-page h1,
+.cv-page h1 {
+    padding-bottom: 10px;
+}
+
+.reel-page .btn-link,
+.cv-page .btn-link {
+    background-color: var(--main-blue);
+    padding: .3em 1em;
+    margin-top: 20px;
+}

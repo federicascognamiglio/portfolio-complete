@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'SF Pro Regular';
+    src: url('../public/fonts/SF-Pro-Display-Regular.otf')
+}
+
+@font-face {
+    font-family: 'SF Pro Medium';
+    src: url('../public/fonts/SF-Pro-Display-Medium.otf')
+}
+
+@font-face {
+    font-family: 'SF Pro Bold';
+    src: url('../public/fonts/SF-Pro-Display-Bold.otf')
+}
+
+@font-face {
+    font-family: 'SF Pro Semibold';
+    src: url('../public/fonts/SF-Pro-Display-Semibold.otf')
+}
+
+@font-face {
+    font-family: 'SF Pro Heavy';
+    src: url('../public/fonts/SF-Pro-Display-Heavy.otf')
+}
+
+@font-face {
+    font-family: 'SF Pro Light';
+    src: url('../public/fonts/SF-Pro-Display-Light.otf')
+}
+
+@font-face {
+    font-family: 'SF Pro Thin';
+    src: url('../public/fonts/SF-Pro-Display-Thin.otf')
+}
